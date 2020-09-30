@@ -6,7 +6,7 @@ const NavBar = () => {
         <div className="container-fluid nav_bg">
             <div className="row">
                 <div className="col-11 col-md-10 mx-auto">
-                    <nav className="navbar navbar-expand-lg navbar-light">
+                    <nav className="navbar navbar-expand-lg navbar-light fixed-top col-11 col-md-10 mx-auto">
                         <NavLink
                             to="/" className="navbar-brand">
                             {/* <strong>TechXSols</strong> */}
