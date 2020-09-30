@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 const Common = ({ title, subtitle, svgData, linkTo, btnName }) => {
+    // data-ride="carousel"
     return (
         <section id="header" className="d-flex align-items-center">
             <div className="container-fluid">
@@ -24,11 +25,11 @@ const Common = ({ title, subtitle, svgData, linkTo, btnName }) => {
                                 </div>
                             </div>
                             <div className="col-11 col-lg-6 order-1 order-lg-2 header-img">
-                                <div id="carouselExampleControls" className="carousel slide" data-ride="carousel" data-interval="2000">
+                                <div className="carousel slide">
                                     <div className="carousel-inner">
                                         {
                                             svgData.map(({ svgsrc, active }, index) => (
-                                                <div key={index} className={`carousel-item  ${ active}`}>
+                                                <div key={index} className={`carousel-item  ${active}`} data-interval="3000">
                                                     <img src={svgsrc} className="d-block w-100" alt={svgsrc} />
                                                 </div>
                                             ))
