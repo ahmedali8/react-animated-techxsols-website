@@ -123,3 +123,17 @@
 .contactUs {
     margin-top: 90px !important;
 }
+
+
+.link {
+    text-decoration: none !important;
+}
+
+.link > img {
+    margin: 0 5px !important;
+    transition: transform 250ms ease-in-out !important;
+}
+
+.link > img:hover {
+    transform: scale(1.2) !important;
+}
