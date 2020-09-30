@@ -10,7 +10,7 @@ const NavBar = () => {
                         <NavLink
                             to="/" className="navbar-brand">
                             {/* <strong>TechXSols</strong> */}
-                            <img className="logo" src="images/logo.png" alt="logo" />
+                            <img className="logo" src="assets/images/logo.png" alt="logo" />
                         </NavLink>
                         <button
                             className="navbar-toggler"
