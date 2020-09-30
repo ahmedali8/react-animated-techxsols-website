@@ -65,3 +65,22 @@ export const aboutSvgData = [
         svgsrc: 'assets/svg/about_us_3.svg'
     },
 ];
+
+export const footerData = [
+    {
+        link: 'https://imahmedalibhatti.surge.sh',
+        iconLink: 'https://img.icons8.com/ios/30/000000/user-male-circle.png'
+    },
+    {
+        link: 'https://github.com/ahmedali8',
+        iconLink: 'https://img.icons8.com/ios/30/000000/github.png'
+    },
+    {
+        link: 'https://www.facebook.com/imahmedalibhatti',
+        iconLink: 'https://img.icons8.com/ios/30/000000/facebook-circled.png'
+    },
+    {
+        link: 'https://www.instagram.com/ahmed.ali6262/',
+        iconLink: 'https://img.icons8.com/ios/30/000000/instagram-new.png'
+    },
+];
