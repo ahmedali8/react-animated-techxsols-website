@@ -3,8 +3,9 @@ import './App.css';
 import { NavBar, Home, Services, AboutUs, ContactUs, Footer, NotFound } from './components';
 import { Routes, Route } from 'react-router-dom';
 
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
+
 
 function App () {
     return (
