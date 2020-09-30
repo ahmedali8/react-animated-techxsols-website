@@ -7,7 +7,12 @@ import useWebAnimations, { fadeIn } from "@wellyshen/use-web-animations";
 
 const Services = () => {
 
-    const { ref } = useWebAnimations({ ...fadeIn });
+    const { ref } = useWebAnimations({
+        ...fadeIn,
+        timing: {
+            duration: 4000
+        }
+    });
 
     useEffect(() => {
         window.scrollTo(0, 0);
