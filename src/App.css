@@ -114,8 +114,12 @@
         align-items: center !important;
     }
 
+    #header {
+        height: 100% !important;
+    }
+
     .header-img {
-        margin-top: 350px !important;
+        margin-top: 50px !important;
     }
 }
 
