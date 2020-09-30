@@ -1,9 +1,9 @@
 import React from 'react';
+import { Carousel, CarouselItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 
 const Common = ({ title, subtitle, svgData, linkTo, btnName }) => {
-    // data-ride="carousel"
     return (
         <section id="header" className="d-flex align-items-center">
             <div className="container-fluid">
@@ -25,17 +25,15 @@ const Common = ({ title, subtitle, svgData, linkTo, btnName }) => {
                                 </div>
                             </div>
                             <div className="col-11 col-lg-6 order-1 order-lg-2 header-img">
-                                <div className="carousel slide">
-                                    <div className="carousel-inner">
-                                        {
-                                            svgData.map(({ svgsrc, active }, index) => (
-                                                <div key={index} className={`carousel-item  ${active}`} data-interval="3000">
-                                                    <img src={svgsrc} className="d-block w-100" alt={svgsrc} />
-                                                </div>
-                                            ))
-                                        }
-                                    </div>
-                                </div>
+                                <Carousel>
+                                    {
+                                        svgData.map(({ svgsrc, active }, index) => (
+                                            <CarouselItem key={index} interval="3000">
+                                                <img src={svgsrc} className="d-block w-100" alt={svgsrc} />
+                                            </CarouselItem>
+                                        ))
+                                    }
+                                </Carousel>
                             </div>
                         </div>
                     </div>

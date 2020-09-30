@@ -102,9 +102,10 @@
     text-align: right;
 }
 
-.carousel-controls {
-    color: #000 !important;
+.carousel-indicators li {
+    background-color: darkgray !important;
 }
+
 
 @media (max-width: 991px) {
 
