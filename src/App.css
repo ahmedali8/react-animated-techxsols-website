@@ -38,6 +38,10 @@
 
 
 @media (max-width: 991px) {
+    .navbar {
+        box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+    }
+
     .navbar-brand {
         font-size: 24px !important;
     }
@@ -102,13 +106,14 @@
     text-align: right;
 }
 
+/* Carousel */
+
 .carousel-indicators li {
     background-color: darkgray !important;
 }
 
 
 @media (max-width: 991px) {
-
     .row {
         justify-content: center !important;
         align-items: center !important;
