@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import useWebAnimations, { fadeIn } from "@wellyshen/use-web-animations";
+
 
 const ContactUs = () => {
+
+    const { ref } = useWebAnimations({ ...fadeIn });
 
     const initialState = {
         name: '',
@@ -35,9 +39,9 @@ const ContactUs = () => {
     }
 
     return (
-        <div className="my-5 contactUs">
-            <h1 className="text-center">Contact Us</h1>
-            <div className="container container_div">
+        <div className="contactUs" ref={ref}>
+            <h1 className="text-center my-5">Contact Us</h1>
+            <div className="container container_div my-5">
                 <div className="row">
                     <div className="col-md-6 col-10 mx-auto">
                         <form onSubmit={onSubmit}>

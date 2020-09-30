@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { imgData } from '../data/index';
 import Card from './Card';
 
+import useWebAnimations, { fadeIn } from "@wellyshen/use-web-animations";
+
 
 const Services = () => {
+
+    const { ref } = useWebAnimations({ ...fadeIn });
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
-        <div className="services">
+        <div className="services" ref={ref}>
             <div className="services my-5">
                 <h1 className="text-center">Our Services</h1>
             </div>
