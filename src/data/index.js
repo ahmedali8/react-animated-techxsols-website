@@ -2,7 +2,7 @@ export const imgData = [
     {
         imgsrc: 'assets/images/web-development.jpg',
         title: 'Web Development',
-        subtitle: ''
+        subtitle: 'Our Developers are way too good in developing incredible websites packed with stunning features.'
     },
     {
         imgsrc: 'assets/images/blockchain-development.jpg',
