@@ -55,7 +55,8 @@ export const homeSvgData = [
 
 export const aboutSvgData = [
     {
-        svgsrc: 'assets/svg/about_us_1.svg'
+        svgsrc: 'assets/svg/about_us_1.svg',
+        active: 'active'
     },
     {
         svgsrc: 'assets/svg/about_us_2.svg'
