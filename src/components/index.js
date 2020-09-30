@@ -1,6 +1,5 @@
 export { default as Home } from './Home';
 export { default as AboutUs } from './AboutUs';
-export { default as Common } from './Common';
 export { default as ContactUs } from './ContactUs';
 export { default as NavBar } from './NavBar';
 export { default as Services } from './Services';
