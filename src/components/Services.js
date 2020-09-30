@@ -10,7 +10,7 @@ const Services = () => {
     const { ref } = useWebAnimations({
         ...fadeIn,
         timing: {
-            duration: 4000
+            duration: 3000
         }
     });
 
