@@ -1,6 +1,10 @@
 import React from 'react';
+import './App.css';
 import { NavBar, Home, Services, AboutUs, ContactUs, Footer, NotFound } from './components';
 import { Routes, Route } from 'react-router-dom';
+
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 
 function App () {
     return (
@@ -10,7 +14,7 @@ function App () {
                 <Route path="/" element={<Home />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/about-us" element={<AboutUs />} />
-                <Route path="contact-us" element={<ContactUs />} />
+                <Route path="/contact-us" element={<ContactUs />} />
 
                 <Route path="*" element={<NotFound />} />
             </Routes>
